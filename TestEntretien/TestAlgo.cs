@@ -23,8 +23,28 @@ namespace TestEntretien
                 new List<int>() { 6,23,7,8},
                 new List<int>() { 2,50,100,88},
             };
-            
-            
+
+            List<int> all = new List<int>();
+            foreach (var lst in datas)
+            {
+                all.AddRange(lst);
+            }
+
+            all = all.Distinct().ToList();
+
+            for (int i = 0; i < datas.Count() ; i++)
+            {
+                var curlist = datas[i];
+                var newList = new List<int>();
+                foreach (var elt in curlist)
+                {
+                    if (!all.Any(e => e == elt))
+                    {
+                        newList.
+                    }
+                }
+            }
+
             
         }
 

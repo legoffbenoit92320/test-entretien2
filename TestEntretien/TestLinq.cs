@@ -14,6 +14,13 @@ namespace TestEntretien
                 "aabccccc",
                 "ddflfccccc"
             };
+
+            var res = input.Distinct().ToList();
+
+
+            res.Count();
+           
+
                     
         }
         public static void MergeIndexAndRemoveDuplicate()
